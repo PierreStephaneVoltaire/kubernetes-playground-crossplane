@@ -1,0 +1,8 @@
+image:
+  repository: crossplane/crossplane
+  tag: v1.18.2
+provider:
+  enabled: false  
+rbac:
+  managerRole:
+    create: true
