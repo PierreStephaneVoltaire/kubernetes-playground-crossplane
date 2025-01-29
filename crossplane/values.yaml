@@ -6,3 +6,6 @@ provider:
 rbac:
   managerRole:
     create: true
+serviceAccount:
+  create: false  
+  name: crossplane-aws-sa 
