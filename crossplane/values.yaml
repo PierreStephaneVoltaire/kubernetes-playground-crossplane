@@ -1,11 +1,8 @@
 image:
-  repository: crossplane/crossplane
-  tag: v1.18.2
+  repository:  crossplane/crossplane
+  tag: stable
 provider:
-  enabled: false  
-rbac:
-  managerRole:
-    create: true
+  enabled: false
 serviceAccount:
-  create: false  
-  name: crossplane-aws-sa 
+  create: true
+  name: crossplane-aws-sa
