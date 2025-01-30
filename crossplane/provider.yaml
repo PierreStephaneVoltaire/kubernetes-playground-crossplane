@@ -1,6 +1,41 @@
+apiVersion: pkg.crossplane.io/v1alpha1
+kind: ControllerConfig
+metadata:
+  name: provider-terraform-config
+spec:
+  serviceAccountName: crossplane-aws-sa
+---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-aws
+  name: provider-terraform
 spec:
-  package: "crossplane/provider-aws:v0.51.2" 
+  package: xpkg.upbound.io/upbound/provider-terraform:v0
+  controllerConfigRef:
+    name: provider-terraform-config
+---
+apiVersion: tf.upbound.io/v1beta1
+kind: ProviderConfig
+metadata:
+  name: aws-ca-central-1
+spec:
+  configuration: |
+    terraform {
+      required_providers {
+        aws = {
+          source = "hashicorp/aws"
+          version = "~> 5.6.1"
+        }
+      }
+      backend "kubernetes" {
+        secret_suffix     = "providerconfig-aws-ca-central-1"
+        namespace         = "crossplane-system"
+        in_cluster_config = true
+      }
+    }
+    provider "aws" {
+      region = "ca-central-1"
+    }
+  credentials:
+    - filename: aws.json
+      source: None

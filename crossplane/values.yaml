@@ -1,8 +1,6 @@
 image:
   repository:  crossplane/crossplane
   tag: stable
-provider:
-  enabled: false
-serviceAccount:
-  create: true
-  name: crossplane-aws-sa
+args:
+  - --service-account=crossplane-aws-sa
+  - --debug
