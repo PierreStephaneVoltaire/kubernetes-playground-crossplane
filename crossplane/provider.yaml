@@ -24,7 +24,7 @@ spec:
       required_providers {
         aws = {
           source = "hashicorp/aws"
-          version = "~> 5.6.1"
+          version = ">= 5.0.0"
         }
       }
       backend "kubernetes" {
@@ -35,6 +35,10 @@ spec:
     }
     provider "aws" {
       region = "ca-central-1"
+    }
+    provider "aws" {
+      region = "us-east-1"
+      alias  = "us-east-1" 
     }
   credentials:
     - filename: aws.json
