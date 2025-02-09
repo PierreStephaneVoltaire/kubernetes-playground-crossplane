@@ -4,7 +4,7 @@ metadata:
   name: provider-terraform
   namespace: argocd
 spec:
-  project: default
+  project: crossplane
   source:
     repoURL: https://github.com/PierreStephaneVoltaire/kubernetes-playground-crossplane
     targetRevision: master
