@@ -1,51 +1,9 @@
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-aws
-spec:
-  package: xpkg.upbound.io/crossplane-contrib/provider-aws:v0.51.4
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-aws-ec2
-spec:
-  package: xpkg.upbound.io/upbound/provider-aws-ec2:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
   name: provider-aws-s3
 spec:
   package: xpkg.upbound.io/upbound/provider-aws-s3:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-aws-ebs
-spec:
-  package: xpkg.upbound.io/upbound/provider-aws-ebs:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-aws-rds
-spec:
-  package: xpkg.upbound.io/upbound/provider-aws-rds:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-aws-dynamodb
-spec:
-  package: xpkg.upbound.io/upbound/provider-aws-dynamodb:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-aws-elasticache
-spec:
-  package: xpkg.upbound.io/upbound/provider-aws-elasticache:v1
 ---
 apiVersion: aws.upbound.io/v1beta1
 kind: ProviderConfig
@@ -55,3 +13,13 @@ spec:
   credentials:
     source: IRSA
     serviceAccountName: crossplane-aws-sa
+---
+apiVersion: s3.aws.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  generateName: crossplane-bucket-
+spec:
+  forProvider:
+    region: ca-central-1
+  providerConfigRef:
+    name: aws
