@@ -54,3 +54,4 @@ metadata:
 spec:
   credentials:
     source: IRSA
+    serviceAccountName: crossplane-aws-sa
