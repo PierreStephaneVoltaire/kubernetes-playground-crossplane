@@ -53,4 +53,4 @@ metadata:
   name: aws
 spec:
   credentials:
-    source: InjectedIdentity
+    source: IRSA
