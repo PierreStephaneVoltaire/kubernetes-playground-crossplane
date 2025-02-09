@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: provider-aws
+  name: provider-terraform
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/PierreStephaneVoltaire/kubernetes-playground-crossplane
     targetRevision: master
-    path: crossplane/aws
+    path: crossplane/terraform
     directory:
       recurse: true
   destination:
