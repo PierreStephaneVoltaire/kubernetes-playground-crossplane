@@ -38,13 +38,6 @@ spec:
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-azure-alertsmanagement
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-alertsmanagement:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
   name: provider-azure-appplatform
 spec:
   package: xpkg.upbound.io/upbound/provider-azure-appplatform:v1
@@ -66,13 +59,6 @@ spec:
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-azure-azurestackhci
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-azurestackhci:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
   name: provider-azure-cache
 spec:
   package: xpkg.upbound.io/upbound/provider-azure-cache:v1
@@ -83,27 +69,6 @@ metadata:
   name: provider-azure-cdn
 spec:
   package: xpkg.upbound.io/upbound/provider-azure-cdn:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-certificateregistration
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-certificateregistration:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-communication
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-communication:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-consumption
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-consumption:v1
 ---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
@@ -129,30 +94,9 @@ spec:
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-azure-costmanagement
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-costmanagement:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
   name: provider-azure-cosmosdb
 spec:
   package: xpkg.upbound.io/upbound/provider-azure-cosmosdb:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-dbformariadb
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-dbformariadb:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-dbformysql
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-dbformysql:v1
 ---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
@@ -164,45 +108,9 @@ spec:
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-azure-elastic
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-elastic:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-eventgrid
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-eventgrid:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-eventhub
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-eventhub:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-insights
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-insights:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-keyvault
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-keyvault:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
   name: provider-azure-logz
 spec:
   package: xpkg.upbound.io/upbound/provider-azure-logz:v1
-
 ---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
@@ -210,63 +118,6 @@ metadata:
   name: provider-azure-managedidentity
 spec:
   package: xpkg.upbound.io/upbound/provider-azure-managedidentity:v1.10.2
-
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-notificationhubs
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-notificationhubs:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-policyinsights
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-policyinsights:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-resources
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-resources:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-security
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-security:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-securityinsights
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-securityinsights:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-spring
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-spring:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-sql
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-sql:v1
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-azure-storagecache
-spec:
-  package: xpkg.upbound.io/upbound/provider-azure-storagecache:v1
 ---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
