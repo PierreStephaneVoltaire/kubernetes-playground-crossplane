@@ -17,7 +17,7 @@ spec:
 apiVersion: s3.aws.upbound.io/v1beta1
 kind: Bucket
 metadata:
-  generateName: crossplane-bucket-
+  name: psvolt-test
 spec:
   forProvider:
     region: ca-central-1
