@@ -156,4 +156,4 @@ kind: Function
 metadata:
   name: go-templating
 spec:
-  package: xpkg.upbound.io/crossplane-contrib/function-go-templating:v0.3.0
+  package: xpkg.upbound.io/crossplane-contrib/function-go-templating:v0.9.1
