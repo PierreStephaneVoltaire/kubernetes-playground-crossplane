@@ -8,9 +8,9 @@ spec:
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-azure-resourcemanager
+  name: provider-azure-resources
 spec:
-  package: xpkg.upbound.io/upbound/provider-azure-resourcemanager:v1
+  package: xpkg.upbound.io/upbound/provider-azure-resources:v1
 ---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
