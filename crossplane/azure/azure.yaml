@@ -149,4 +149,4 @@ spec:
     secretRef:
       namespace: crossplane-system
       name: azure-secret
-      key: creds
+      key: azure-auth.json
