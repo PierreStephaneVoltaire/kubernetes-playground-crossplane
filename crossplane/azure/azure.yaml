@@ -150,3 +150,10 @@ spec:
       namespace: crossplane-system
       name: azure-secret
       key: azure-auth.json
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Function
+metadata:
+  name: go-templating
+spec:
+  package: xpkg.upbound.io/crossplane-contrib/function-go-templating:v0.3.0
