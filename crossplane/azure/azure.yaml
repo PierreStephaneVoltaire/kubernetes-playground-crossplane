@@ -15,6 +15,13 @@ spec:
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
+  name: provider-azure-keyvault
+spec:
+  package: xpkg.upbound.io/upbound/provider-azure-keyvault:v1
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
   name: crossplane-provider-azure-compute
 spec:
   package: xpkg.upbound.io/upbound/provider-azure-compute:v1
