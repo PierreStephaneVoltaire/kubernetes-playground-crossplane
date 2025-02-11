@@ -4,7 +4,13 @@ metadata:
   name: crossplane-provider-azure-network
 spec:
   package: xpkg.upbound.io/upbound/provider-azure-network:v1
-
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-azure-resourcemanager
+spec:
+  package: xpkg.upbound.io/upbound/provider-azure-resourcemanager:v1
 ---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
