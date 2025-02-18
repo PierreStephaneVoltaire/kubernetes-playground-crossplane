@@ -4,3 +4,20 @@ image:
 args:
   - --service-account=crossplane-aws-sa
   - --debug
+
+nodeSelector:
+    role: deployments
+tolerations:
+  - key: "dedicated"
+    operator: "Equal"
+    value: "deployments"
+    effect: "NoSchedule"
+
+rbacManager:
+  nodeSelector:
+      role: deployments
+  tolerations:
+    - key: "dedicated"
+      operator: "Equal"
+      value: "deployments"
+      effect: "NoSchedule"
